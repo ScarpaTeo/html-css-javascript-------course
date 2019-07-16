@@ -1,0 +1,25 @@
+/* con esta etiqueta div > p , 
+modificamos el estilo de los parrafos que este directamente 
+en el div , no los que estan contenidos dentros de otros
+elementos dentro del div*/
+
+div > p{
+	font-size:20px;
+	color:green;
+}
+input[type]{}
+
+input[type="text"]{}
+
+/* la etiqueta body hace que todo lo que esta en su interior herede
+el valor del estilo que le estamos asignando*/
+body{
+	font-size:20px;
+	color:blue;
+}
+
+article{
+	font-size:10px;
+	color: red;
+
+}

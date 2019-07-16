@@ -1,0 +1,43 @@
+<!-- clase nueve , FORMULARIOS -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<form action="" method="" >
+
+		<label for="Nombre">Ingresa tu nombre</label>
+		<input type ="text" placeholder="ingresa tu Nombre" maxlength="12" id="Nombre" required="*campo obligatorio*">
+		<br>
+		<label for="Correo">Ingresa tu correo</label>
+		<input type="email" id="Correo" placeholder="Ingresa tu correo " name="correo" required="*campo obligatorio*"><!-- nos permieten colocar campos que reciban datos y darle atributos-->
+		<br><br>
+		<label for="mensaje">Dejanos tu mensaje</label>
+		<textarea name="Mensaje" id="mensaje" placeholder="Mensaje" ></textarea><!-- nos permite realizar cuadros para textos -->
+		<br><br>
+		<label for="pais">Elige un pais</label>
+		<select name="Pais" id="pais" > <!-- nos permite hacer un menu desplegable con seleccion comboBOX -->
+			<option value="argentina" >Argentina</option>
+			<option value="españa">España</option>
+			<option value="irlanda">Irlanda</option>
+		</select><!-- el select nos permiete elegir d euna seriede opciones alguna mientras que todas las opciones ocntengan el mismo name -->
+		<label for="Hombre">hombre</label> <!-- radio butons de opcion -->
+		<input type="radio" name="genero" value="Hombre" id="Hombre">
+		<label for="Mujer">Mujer</label>
+		<input type="radio" name="genero" value="Mujer" id="Mujer">
+		<br>
+		<input type="checkbox" name="terminos" id="Terminos" required="debes aceptar">Terminos y condiciones
+
+		<input type="submit" name="Enviar">
+
+		<img src="Imagenes/manzana.jfif">
+
+
+
+	</form>
+
+</body>
+</html> 

@@ -1,0 +1,25 @@
+body{
+	background:#29E39E;
+	background: url(img/cerveza.png);
+	background-repeat:repeat;
+	/*background-size:cover;*/
+	background-attachment:scroll;
+	/*background-position:center center;*/
+	/*background: url(img/madera.jpg) no-repeat fixed center center;
+	background-size: 500px;*/
+} 
+
+/*
+p{	font-size:30px;
+	color:white;
+}*/
+
+/*
+.fondo{
+	width:500px;
+	height: 500px;
+	background: url(img/cesped.jpg) #000;
+	background-repeat: no-repeat;
+	background-size: 50%;
+
+} */

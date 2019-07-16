@@ -1,0 +1,25 @@
+/* asi se comenta dentro de CSS */
+/*Selector universal
+* {color: red;}
+*/
+
+h1,h2,h3{
+	color: red;
+}
+
+div article p{
+	font-size:20px;
+	color:black;
+}
+
+p a {
+	color: green;
+}
+
+.grande{
+	font-size:30px;
+	color: gray;
+}
+.rojo{
+	color: red;
+}
