@@ -1,0 +1,10 @@
+@font-face{
+	font-family: "OpenSansCondensed";
+	src:url('fonts/OpenSansCondensed-Bold.ttf');
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+h1 {
+	font-weight: normal;
+}
