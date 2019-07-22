@@ -1,0 +1,31 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones Javascript</title>
+</head>
+<body>
+	<script>
+		function suma(a,b){
+			var resultado=a+b;
+			return resultado;
+		}
+		
+		var x=suma(7,25);
+		var y=suma(3,2);
+		var t=suma(4,8);
+		document.write(x,'  ',y,'  ',t);
+		
+
+		//funcion anonima dentro de variables
+		var sumas=function(a,b){
+			return a+b;
+		}
+		document.write(sumas(9,90))
+		//funciones autoinvocadas
+		(function(){
+			alert('hola mundo');
+		}());
+	</script>
+</body>
+</html>
