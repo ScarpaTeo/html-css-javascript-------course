@@ -1,0 +1,108 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Software Developmen Group</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<nav class="menu">
+				<a href="#">Productos</a>
+				<a href="#">Servicios</a>
+				<a href="#">Acerca de</a>
+				<a href="#">Contacto</a>
+			</nav>
+		</header>
+	<div class="screen">
+		<article class="primera">
+				<div class="galeria">
+					<img class="carrusel" src="img/imagen1.png">
+					<img class="carrusel" src="img/imagen2.png">
+					<img class="carrusel" src="img/imagen3.png">
+					<img class="carrusel" src="img/imagen4.png">	
+				</div>
+			</article>
+	</div>
+	<div class="productos">
+		<img src="img/productos.png">
+	</div>
+		<section class="main">
+			<article class="segunda">
+				<div class="imagen1">
+					<img src="img/imagen5.png">
+				</div>
+				<h2>Owner Builder Integrated</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem necessitatibus quasi quo aliquid accusamus consectetur eos culpa ab velit officia. Ullam delectus dolorem accusamus asperiores iusto, saepe tempore ea? Ipsa!</p>
+			</article>
+			<article class="second">
+				<div class="imagenB">
+					<img src="img/imagen5.png">
+				</div>
+				<h2>Owner Builder Integrated</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem necessitatibus quasi quo aliquid accusamus consectetur eos culpa ab velit officia. Ullam delectus dolorem accusamus asperiores iusto, saepe tempore ea? Ipsa!</p>
+			</article>
+			<article class="tercera">
+				<div class="imagen2">
+					<img src="img/imagen6.png">
+				</div>
+			</article>
+			<article class="cuarta">
+				<div class="imagen3">
+					<img src="img/grupo.png">
+				</div>
+				<h2>Acerca de Nosotros</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo voluptatum doloribus, mollitia quos reiciendis soluta consectetur repudiandae quo labore aperiam eum similique voluptatibus commodi nostrum, magni nihil, cum recusandae nam.
+				<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ut voluptas dolor laudantium, veritatis, maiores molestias odio labore exercitationem error nobis explicabo, maxime, cumque incidunt officia distinctio nisi reiciendis beatae! </p>
+			</article>
+		</section>
+		<div class="map">
+			<iframe class="mapita" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.2932355265532!2d-58.98393389708725!3d-27.454460186414675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf18625c54d%3A0x16d3ed2a8c7a62f3!2sCol%C3%B3n+56%2C+H3500CGA+Resistencia%2C+Chaco!5e0!3m2!1ses!2sar!4v1563868638741!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="info">
+		<img src="img/info.png">
+	</div>
+		<footer>
+			<div class="contenedor">
+				<section class="contacto">
+					<h3 class="titulo">Contacto</h3>
+					<form class="formulario" action="">
+						<input type="text" placeholder="Nombre" name="nombre" required>
+						<input type="email" placeholder="Correo" name="correo" required>
+						<textarea name="mensaje" placeholder="Mensaje"></textarea>
+						<input class="boton" type="submit" value="Enviar">
+					</form>
+				</section>
+			</div>
+			<div class="redes">
+				<a href="#"><img src="img/face.png"></a>
+				<a href="#"><img src="img/git.png"></a>
+				<a href="#"><img src="img/twit.png"></a>
+				<a href="#"><img src="img/insta.png"></a>
+			</div>
+		</footer>
+	<script>
+		var indice=0;
+		transicion();
+		function transicion(){
+			var item;
+			var x=document.getElementsByClassName("carrusel");
+			for(i=0;i< x.length;i++){
+				x[i].style.display="none";
+			}
+			indice++;
+			if(indice>x.length){indice=1}
+			x[indice-1].style.display="block";
+		setTimeout(transicion,9000);
+		}
+	</script>
+	
+</body>
+</html>
