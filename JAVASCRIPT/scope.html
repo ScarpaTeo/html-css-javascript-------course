@@ -1,0 +1,50 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Scope de Javascript</title>
+</head>
+<body>
+	<script>
+		//las variables pueden ser locales y globales
+	//-----locales:
+	function saludo(){
+		var texto='hola mundo';
+		console.log(texto);
+	}
+	//saludo();
+	//--------local con funcion anidada:
+	function despedida(){
+		var texto='adios';
+		function mensaje(){
+			console.log(texto);
+		}
+		mensaje();
+	}
+	//despedida();
+	//-----globales:
+	var texto='informatorio';
+	function hola(){
+		document.write(texto);
+		function chau(){
+			document.write(texto+'hola');
+		}
+		chau();
+	}
+	hola();
+	//exepcion:si le quitamos la palabra var a una varialbe dentro de un funcion esta se considera automaticamente global por defecto.
+	
+	//-----------proteger las variables de codigo de tercero:
+	//funcion auto invocadas o anonimas:
+	(function(){
+		alert('teo scarpa');
+		var mensaje='hola mundo';
+	}());
+	console.log(mensaje);
+
+
+
+
+	</script>
+</body>
+</html>

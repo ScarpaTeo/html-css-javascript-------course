@@ -1,0 +1,35 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Eventos de Tiempo</title>
+</head>
+<body>
+	<button id="btn1">Saludar</button>
+	<button id="btn2">Parar</button>
+
+	<script>
+		//------setTimeout()
+		function saludo(){
+			alert('hola mundo');
+		}
+
+		//var tiempo=setTimeout(saludo,3000);
+		//clearTimeout(tiempo);
+
+		//document.getElementById('btn').addEventListener('click',function(){
+		//	setTimeout(saludo,3000);
+		//});
+
+		//------setInterval
+		var intervalo=setInterval(saludo,3000);
+		document.getElementById('btn2').addEventListener('click',function(){
+			clearInterval(intervalo);
+		})
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos</title>
+	<style>
+		.caja{
+			width:200px;
+			height: 200px;
+			cursor: pointer;
+			margin: 10px;
+			display: inline-block;
+			text-align: center;
+			font-size:30px;
+			font-family: Arial;
+			background: #000;
+		}
+	</style>
+</head>
+<body>
+	<!--<button onclick="saludo()">saludo</button>
+	<button id="btn-saludar">Saludar</button>-->
+	<button id="btn-caja">Crear caja</button>
+	<section id="contenedor"></section>
+	<script>
+		//function saludo(){alert('hola');}
+		//function saludo2(){alert('hola2');}
+		//var btn=document.getElementById('btn-saludar');
+		//btn.addEventListener('click',saludo2);
+		//btn.removeEventListener('click',saludo2);
+
+		function crearCaja(){
+			var contenedor=document.getElementById('contenedor');
+			var caja=document.createElement('div');
+			caja.className='caja';
+			contenedor.appendChild(caja);
+		}
+		var btncaja=document.getElementById('btn-caja');
+		btncaja.addEventListener('click',crearCaja);
+
+	</script>
+	
+</body>
+</html>

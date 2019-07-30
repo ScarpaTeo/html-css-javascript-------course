@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodo y propiedades para Cadenas de Texto</title>
+</head>
+<body>
+	<script>
+		var texto='hola mundo';
+		var cantidad=texto.length;
+		//document.write(texto +' tiene '+cantidad+' caracteres');
+		var cantidadcortada=texto.substring(4,10);
+		//document.write(cantidadcortada);
+		var segundo=texto.substr(3,4);
+		//document.write(segundo);
+		var nuevo=texto.replace('hola','mendigo');
+		//document.write(nuevo);
+		//n=texto.toUpperCase();
+		n=texto.toLowerCase();
+		//document.write(n);
+
+		var posicion=texto.indexOf('o');
+		document.write(posicion);
+
+	</script>
+	
+</body>
+</html>

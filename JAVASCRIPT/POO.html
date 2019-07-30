@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Objetos en Javascript</title>
+</head>
+<body>
+	
+	<script>
+		//creando objetos
+
+		var persona = {nombre:'teo',edad:26,apellido:'Scarpa',
+			detalle:function(){
+				return this.nombre +' '+ this.apellido +' tiene '+this.edad +' años '
+			}
+		};
+
+		var persona2 = {nombre:'gino',edad:29,apellido:'Scarpa'};
+
+		document.write(persona.detalle());
+		
+		//--------------------------------------
+
+		//constructor de Objetos
+
+		function persona3(nombre,edad,pais){
+			this.nombre=nombre;
+			this.edad=edad;
+			this.pais=pais;
+		}
+
+		var jorge = new persona3('jorge',56,'argentina');
+
+		document.write(jorge.pais,jorge.nombre,jorge.edad);
+
+	</script>
+</body>
+</html>

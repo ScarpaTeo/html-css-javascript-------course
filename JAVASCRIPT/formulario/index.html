@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<title>Pratica Formulario</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		<form action="" class="formulario" id="formulario" name="formulario">
+			<div class="contenedor-inputs">
+				<input type="text" name="nombre" placeholder="nombre">
+				<input type="text" name="correo" placeholder="correo">
+				<div class="sexo">
+					<input type="radio" name="sexo" id="hombre" value="hombre">
+					<label class="label-radio hombre" for="hombre">hombre</label>
+					<input type="radio" name="sexo" id="mujer" value="mujer">
+					<label class="label-radio mujer" for="mujer">mujer</label>
+				</div>
+				<div class="terminos">
+					<input type="checkbox" name="terminos" id="terminos">
+					<label for="terminos">Acepto terminos y condiciones</label>
+				</div>
+				<ul class="error" id="error">
+					
+				</ul>
+			</div>
+			<input type="submit" class="btn" value="registrate">
+
+		</form>
+	</div>
+
+	<script src="formulario.js"></script>
+</body>
+</html>
